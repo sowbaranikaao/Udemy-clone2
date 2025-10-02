@@ -77,6 +77,13 @@
     padding:10px;
     border-radius:20px;
     color:white;
+    cursor:pointer;
+    border:solid #a435f0 1px;
+}
+.container p:hover{
+    color:black;
+    transition:0.5s;
+    background-color:transparent;
 }
 .sale-img{
     position: relative;
@@ -92,6 +99,20 @@
     padding:2%;
     top:30%;
     left:10%;
+    animation-name: zoom;
+    animation-duration:2s;
+    opacity:0;
+    animation-fill-mode:forwards;
+}
+@keyframes zoom{
+    0%{
+        opacity:0;
+        transform:scale(0);
+    }
+    100%{
+        opacity:1;
+        transform:scale(1);
+    }
 }
 .recommend{
     padding:10px;
